@@ -1,0 +1,364 @@
+html,
+body {
+    min-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+    font-size: 100%;
+}
+
+.banner {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.banner .img_bg {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    position: absolute;
+    padding: 20px 0;
+    width: 1200px;
+    justify-content: space-between;
+    background-color: transparent;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+header img {
+    width: auto
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.banner_center {
+    width: 1200px;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    bottom: 0;
+}
+
+.banner_img {
+    position: absolute;
+    left: 80px;
+    bottom: 0;
+}
+
+.download {
+    position: absolute;
+    width: 370px;
+    right: 80px;
+    bottom: 50px;
+}
+
+.download p {
+    color: #000;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.download .d_btn {
+    display: flex;
+    margin-top: 56px;
+    justify-content: space-between;
+}
+
+.download .d_btn .d_herf {
+    display: flex;
+    flex-direction: column;
+    width: 174px;
+    justify-content: space-between
+}
+
+.download .d_btn .d_herf a {
+    display: inline-block;
+    padding: 6px 18px;
+    border: 1px solid #fff;
+    margin: 12px 0;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.download .d_btn .d_herf a span {
+    font-size: 14px;
+    color: #fff;
+    vertical-align: middle;
+    display: inline-block;
+    height: 36px;
+    line-height: 18px;
+}
+
+.download .d_btn .d_herf a img {
+    vertical-align: middle;
+}
+
+.download .d_btn .d_herf a img:nth-child(2) {
+    margin: 0 20px;
+}
+
+.pag1_bg {
+    background: url('../img/bg_about-us.png');
+    background-size: cover;
+}
+
+.active_bg {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+
+.pag1 {
+    position: relative;
+    width: 1200px;
+    height: 480px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: 500;
+    text-align: center;
+}
+
+h1 span {
+    font-size: 20px;
+}
+
+section {
+    padding: 90px 0;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.advantage {
+    display: flex;
+    padding: 0 136px;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.advantage_img {
+    width: 130px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.advantage_img span {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.advantage_list ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.advantage_list {
+    width: 600px;
+}
+
+.advantage_list ul li {
+    line-height: 36px;
+    position: relative;
+}
+
+.advantage_list ul li::before {
+    display: inline-block;
+    position: absolute;
+    left: -40px;
+    top: 8px;
+    width: 18px;
+    height: 18px;
+    content: '';
+    background-image: url('../img/icon_basketball.png');
+}
+
+.advantage:last-child .advantage_list ul li::before {
+    background-image: url('../img/icon_football.png');
+}
+
+.about {
+    background: url('../img/bg_about-us.png') no-repeat center center;
+    background-size: cover;
+}
+
+.about_list {
+    margin: 80px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about_list .about_item {
+    width: 330px;
+    height: 300px;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .7)
+}
+
+.about_list .about_item span {
+    display: block;
+    font-weight: bolder;
+    margin: 10px 0 30px;
+}
+
+.about_list .about_item p {
+    text-align: left;
+    line-height: 2;
+}
+
+.join_chat {
+    padding: 80px 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.join_chat .join_item {
+    text-align: center;
+    line-height: 2;
+    font-weight: bolder;
+    position: relative;
+}
+
+.join_chat .join_item::after {
+    content: '';
+    top: 70px;
+    right: -126px;
+    position: absolute;
+    display: inline-block;
+    width: 130px;
+    border-top: 1px dotted #fdd003;
+}
+
+.join_chat .join_item:last-child::after {
+    content: '';
+    display: none;
+}
+
+.apply {
+    background: url('../img/bg_apply.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.apply form {
+    padding: 70px 120px 0;
+}
+
+.apply form ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.apply form ul li {
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    padding: 10px 0;
+    justify-content: space-between;
+    position: relative;
+}
+
+.apply form ul li label {
+    letter-spacing: 8px;
+}
+
+.apply form ul li::before {
+    content: "*";
+    color: #fdd003;
+    position: absolute;
+    left: -20px;
+    top: 15px;
+}
+
+.apply form ul li input {
+    border-radius: 5px;
+    border: 1px solid #fff;
+    line-height: 30px;
+    height: 30px;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #999;
+    text-align: right;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    text-align: right;
+    color: #999;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    text-align: right;
+    color: #999;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    text-align: right;
+    color: #999;
+}
+
+.apply form ul li:nth-child(2n) {
+    width: 370px;
+}
+
+.apply form ul li:nth-child(2n) input {
+    width: 220px;
+}
+
+.apply form ul li:nth-child(2n+1) {
+    width: 530px;
+}
+
+.apply form ul li:nth-child(2n+1) input {
+    width: 405px;
+}
+
+#submit {
+    display: block;
+    margin: 50px auto;
+    width: 260px;
+    height: 70px;
+    background-color: #fdd003;
+    color: #000;
+    text-align: center;
+    line-height: 70px;
+    border: none;
+    font-size: 18px;
+    letter-spacing: 5px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    line-height: 35px;
+    text-align: center;
+}
