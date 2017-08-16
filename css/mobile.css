@@ -1,0 +1,220 @@
+.page1 {
+  width: 100%;
+  background: url('.././img/banner.png') 67% no-repeat;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.page1 .header {
+  text-align: center;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page1 p {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+.page1 p span {
+  color: #fdd003;
+}
+
+.page1 .header img {
+  width: 70%;
+  height: auto;
+}
+
+.download {
+  height: 20vh;
+  text-align: center;
+  position: relative;
+}
+
+.download a:first-child {
+  display: inline-block;
+  padding: 8px 15px;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.download a:last-child {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  padding: 5px 0;
+  color: #fff;
+  transform: translateX(-50%);
+}
+
+.page_title {
+  padding-top: 5px;
+  font-size: 18pt;
+  letter-spacing: 2px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.page_title span {
+  font-size: 12pt;
+  letter-spacing: 0;
+}
+
+.page2,
+.page4 {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.advantage_item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page_content {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  flex-flow: column;
+}
+
+.advantage_item .advantage_item_img {
+  padding: 10px 5px;
+}
+
+.advantage_item .advantage_item_img img {
+  width: 65px;
+}
+
+.advantage_item .advantage_item_list {
+  padding: 0 5px;
+}
+
+.advantage_item .advantage_item_list li {
+  display: inline-block;
+  padding-left: 15px;
+}
+
+.advantage_item:first-child .advantage_item_list li::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url('.././img/icon_basketball.png') no-repeat;
+  background-size: 100%;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+.advantage_item:last-child .advantage_item_list li::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url('.././img/icon_football.png') no-repeat;
+  background-size: 100%;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+.page3 {
+  background: url('.././img/bg_about-us.png') 67% no-repeat;
+}
+
+.page3_item {
+  display: flex;
+  justify-content: center;
+}
+
+.page3_item .card {
+  height: 75vw;
+  width: 75vw;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column;
+  align-items: center;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, .7);
+}
+
+.page3_item .card img {
+  width: 50px;
+}
+
+.page3_item .card span {
+  font-weight: bolder;
+}
+
+.join_item {
+  text-align: center;
+}
+
+.join_item img {
+  height: 15vh;
+}
+
+.page5 {
+  background: url('.././img/bg_apply.png') center no-repeat;
+  display: flex;
+  flex-flow: column;
+}
+
+.page5 .form_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.page5 .form_item label {
+  display: inline-block;
+  width: 80px;
+  color: #fff;
+}
+
+.page5 .form_item input {
+  display: inline-block;
+  flex: 1;
+  height: 30px;
+  line-height: 30px;
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  padding: 0 5px;
+  overflow: auto;
+}
+
+.page5 .form_item input::-webkit-input-placeholder {
+  text-align: right;
+}
+
+.page5 .submit {
+  margin: 0 auto;
+  display: block;
+  width: 60%;
+  height: 40px;
+  background-color: #fdd003;
+  color: #000;
+  text-align: center;
+  line-height: 40px;
+  border: none;
+  font-size: 18px;
+  letter-spacing: 5px;
+  border-radius: 5px;
+}
+
+.page5 footer {
+  text-align: center;
+  color: #eee;
+}

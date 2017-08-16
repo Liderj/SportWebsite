@@ -5,8 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>荷尔蒙体院官网</title>
+    <title>荷尔蒙体育官网</title>
     <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script>
+        function detectmob() {
+            if (navigator.userAgent.match(/Android/i) ||
+                navigator.userAgent.match(/webOS/i) ||
+                navigator.userAgent.match(/iPhone/i) ||
+                navigator.userAgent.match(/iPad/i) ||
+                navigator.userAgent.match(/iPod/i) ||
+                navigator.userAgent.match(/BlackBerry/i) ||
+                navigator.userAgent.match(/Windows Phone/i)
+            ) {
+                // 移动端
+                window.location.href = './mobile.html'
+            } else {
+                // pc端
+                return
+            }
+        }
+        detectmob();
+    </script>
 </head>
 
 <body>
@@ -130,7 +149,8 @@
                 <ul>
                     <li><label for="">场馆名称</label><input type="text"></li>
                     <li><label for="">联系人</label><input type="text"></li>
-                    <li><label for="">所在城市</label><input class="address" placeholder="省" style="width:190px;" type="text"> <input class="address" style="width:190px;" placeholder="市" type="text"></li>
+                    <li><label for="">所在城市</label><input class="address" placeholder="省" style="width:190px;" type="text">
+                        <input class="address" style="width:190px;" placeholder="市" type="text"></li>
                     <li><label for="">联系电话</label><input type="text"></li>
                     <li style="width:100%"><label for="">详细地址</label><input style="width:834px" type="text"></li>
                 </ul>
